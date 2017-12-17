@@ -1,7 +1,9 @@
-## robbyrussell
-The default theme – cloned from oh-my-zsh.
+## randomrussell
 
-![robbyrussell theme](https://bachue.github.io/oh-my-fish/images/robbyrussell-screenshot.png)
+A colorful robbyrussel clone.
+
+
+![randomrussell theme](https://github.com/lightify97/randomrussel/blob/master/randomrussel.png)
 
 
 #### Characteristics
