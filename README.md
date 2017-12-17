@@ -9,4 +9,10 @@ A colorful robbyrussel clone.
 #### Characteristics
 
 * Displays git information in the command prompt when available.
-* If the last command was failed, the indicator would be red, otherwise it's green
+* If the last command was failed, the indicator would be a red cross, otherwise it's a colored dollar sign.
+
+### Note
+
+You will need [powerline](https://github.com/powerline/fonts
+) or [nerd](https://github.com/ryanoasis/nerd-fonts
+) font to display unicode characters correctly.
