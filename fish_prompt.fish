@@ -53,9 +53,9 @@ echo -n -s '➜ '$cwd '' $git_info ' '
 
 if test $last_status = 0
     set_color -o $rand_colors[$rand_color_idx]
-    printf ' '
-  #  printf '  '
-   # printf '  '
+    printf ''
+  #  printf ' '
+   # printf ' '
 else
     set_color -o fa1111
     printf '✗ '
