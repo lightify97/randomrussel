@@ -16,3 +16,5 @@ A colorful robbyrussel clone.
 You will need [powerline](https://github.com/powerline/fonts
 ) or [nerd](https://github.com/ryanoasis/nerd-fonts
 ) font to display unicode characters correctly.
+
+You can download "D2Coding" powerline+nerdfont patched font [here](http://bit.ly/2pLiQku)
