@@ -39,7 +39,7 @@ end
      set -l dirty "$yellow✗"
        set git_info "$git_info$dirty"
    else
-     set -l clean "$green "
+     set -l clean "$green"
      set git_info "$git_info$clean"
      end
   end
@@ -49,7 +49,7 @@ end
 
 set_color -o $rand_colors[$rand_color_idx]
 
-echo -n -s '➜ '$cwd '' $git_info ' '
+echo -n -s '  '$cwd '' $git_info ' '
 
 if test $last_status = 0
     set_color -o $rand_colors[$rand_color_idx]
@@ -58,7 +58,7 @@ if test $last_status = 0
    # printf ' '
 else
     set_color -o fa1111
-    printf '✗ '
+    printf '✗'
 end
 set_color normal
 printf ' '
