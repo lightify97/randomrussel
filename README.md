@@ -4,7 +4,7 @@ A colorful robbyrussel clone.
 
 
 ![randomrussell theme](https://github.com/lightify97/randomrussel/blob/master/randomrussel.png)
-
+![randomrussel theme](https://github.com/lightify97/randomrussel/blob/master/randomrussel_2.png)
 
 #### Characteristics
 
