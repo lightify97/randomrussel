@@ -4,7 +4,7 @@
    set -g theme_display_git_untracked no
 
 function _git_branch_name
-  echo (command git symbolic-ref HEAD ^/dev/null | sed -e 's|^refs/heads/||')
+  echo (command git symbolic-ref HEAD 2>/dev/null | sed -e 's|^refs/heads/||')
 end
 
 function _is_git_dirty
@@ -13,7 +13,7 @@ function _is_git_dirty
   if [ "$theme_display_git_untracked" = 'no' -o "$show_untracked" = 'false' ]
     set untracked '--untracked-files=no'
   end
-  echo (command git status -s --ignore-submodules=dirty $untracked ^/dev/null)
+  echo (command git status -s --ignore-submodules=dirty $untracked 2>/dev/null)
 end
 
  function fish_prompt
@@ -27,14 +27,14 @@ end
    set -l normal (set_color   normal)
    set -l normal (set_color -o normal)
    set -l white (set_color -o white)
-   
+
 
    set -l cwd (basename (prompt_pwd))
- 
+
    if [ (_git_branch_name) ]
    set -l git_branch $red(_git_branch_name)
    set git_info "$blue git:($git_branch$blue)"
- 
+
      if [ (_is_git_dirty) ]
      set -l dirty "$yellow✗"
        set git_info "$git_info$dirty"
